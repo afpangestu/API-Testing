@@ -1,7 +1,7 @@
 import requests
 
+url = "https://secondhand.binaracademy.org"
 def test_login_user():
-    url = "https://secondhand.binaracademy.org/users/sign_in.json"
     data = {
         "user": {
             "email": "ajiseller@mail.com",
@@ -9,7 +9,7 @@ def test_login_user():
         }
     }
 
-    response = requests.post(url, json=data)
+    response = requests.post(url + "/users/sign_in.json", json=data)
 
     # Verify status code
     assert response.status_code == 200
