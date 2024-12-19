@@ -16,17 +16,17 @@
 
 ## Introduction
 
-Test automation is the process of using software tools and frameworks to automate test execution, compare actual outcomes to expected outcomes, and generate test reports. This helps to increase efficiency, accuracy, and repeatability of testing processes, as well as reducing the time and costs associated with manual testing. <br><br>In here we are going to test SWAG Labs (Sauce Demo - https://www.saucedemo.com). We are going to use tools and test frameworks like TestNG with Selenium for the automation. This project focuses on automating tests for the Swag Labs website using Selenium.
+Test automation is the process of using software tools and frameworks to automate test execution, compare actual outcomes to expected outcomes, and generate test reports. This helps to increase efficiency, accuracy, and repeatability of testing processes, as well as reducing the time and costs associated with manual testing. <br><br>In here we are going to Second Hand Endpoint (https://secondhand.binaracademy.org). This project focuses on API automating tests for the Second Hand API Endpoint using python.
 
 ## Scope
 
 The project covers the following areas of the Swag Labs website:
 
-- Login page
-- Navigation Bar
-- Footer Bar
-- Home page, including product list and product detail.
-- Checkout product
+- Authentication (POST Registration, POST Login)
+- Categories (GET List Categories, GET Category by id)
+- Offers (POST Offers, GET List Offers, PUT Update Offer)
+- Products (POST Product, GET List Product, GET List Product by id, PUT Update Product, DELETE Product)
+- Profiles (PUT Update Profile, GET Profile)
 
 ## Features
 
