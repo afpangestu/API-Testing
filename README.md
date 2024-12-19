@@ -1,5 +1,5 @@
 # API Testing
-### ⚙️🛠 Automated API Testing using Python Language 🛠⚙️
+### ⚙️🛠 Automated API Testing using PyTest 🛠⚙️
 
 📢 This repository contains an API testing project for Second Hand using Python, requests, PyTest. The tests are designed to cover various scenarios on the Second Hand (https://secondhand.binaracademy.org).
 
@@ -20,7 +20,7 @@ Test automation is the process of using software tools and frameworks to automat
 
 ## Scope
 
-The project covers the following areas of the Swag Labs website:
+The project covers the following areas of the Second Hand Endpoint:
 
 - Authentication (POST Registration, POST Login)
 - Categories (GET List Categories, GET Category by id)
@@ -38,19 +38,15 @@ The project covers the following areas of the Swag Labs website:
 
 ## Tools and Technologies Used
 
-This test automation project for Swag Labs utilizes a variety of tools and technologies to streamline the testing process and ensure efficient and accurate results.
+This test automation project for API testing Second Hand Endpoints utilizes a variety of tools and technologies to streamline the testing process and ensure efficient and accurate results.
 
-- **Java**: The primary programming language used for writing the test automation code.
+- **Python**: The primary programming language used for writing the test automation code.
 
-- **Selenium**: A popular open-source framework for automating web browser interactions and testing.
+- **PyTest**: A popular, open-source, and free Python testing framework that helps streamline the testing process.
 
-- **TestNG**: A popular and most widely used testing framework for Selenium automation.
+- **Requests**: A library for making HTTP requests. It provides an easy-to-use interface that makes working with HTTP very simple, which means it simplifies the process of sending and receiving data from websites by providing a uniform interface for both GET and POST methods.
 
-- **ChromeDriver**: The WebDriver implementation for Google Chrome, enabling Selenium to automate Chrome browser actions.
-
-- **Maven**: A build and dependency management tool that simplifies project setup and maintenance.
-
-- **IntelliJ IDE**:  An integrated development environment (IDE) written in Java for developing computer software written in Java, Kotlin, Groovy, and other JVM-based languages.
+- **PyCharm IDE**: An integrated development environment (IDE) for Python programming.
 
 - **Qase**:  A modern test management platform for manual & automated QA testing & reporting that helps your team deliver a higher quality product, faster.
 
@@ -59,25 +55,23 @@ These technologies are combined to create an effective testing framework that au
 
 ## Test Cases
 
-The test cases are written in third-party platform using [Qase](https://qase.io/). Each test case covers various aspects of the Swag Labs website, ensuring comprehensive coverage.
+The test cases are written in third-party platform using [Qase](https://qase.io/). Each test case covers various aspects of the API Second Hand, ensuring comprehensive coverage.
 
 ## Installation
 
 Ensure that you have the following tools and technologies installed on your machine:
 
-- [Java](https://www.java.com/en/download/)
-- [Maven](https://maven.apache.org/install.html)
-- [IntelliJ IDE](https://www.jetbrains.com/idea/download/)
-- [Selenium](https://www.selenium.dev/downloads/)
-- [Chrome driver](https://chromedriver.chromium.org)
-  <br><br>Note: Make sure to download the relavent Chrome driver version for your chrome browser match, and put it into project directory.
+- [Python](https://www.python.org/downloads/)
+- [PyTest](https://pypi.org/project/pytest/)
+- [Requests](https://pypi.org/project/requests/)
+- [PyCharm IDE](https://www.jetbrains.com/pycharm/download/)
+  <br><br>Note: Make sure to download the latest version of library and tools to make sure for long term support.
 
 ## Usage
 
-1. Open the project in IntelliJ or your preferred IDE.
-2. Navigate to the `src/test/java/testng` directory.
-3. Locate the test files `testng.xml`.
-4. Run the test by `Right click > Run` to execute the automated test scenarios.
+1. Open the project in PyCharm IDE or your preferred IDE.
+2. Clone repository `git clone https://github.com/afpangestu/API-Testing.git`.
+3. Run the test.
 
 ## Contributing
 
