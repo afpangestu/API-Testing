@@ -8,7 +8,6 @@ from requests.utils import dict_from_cookiejar, cookiejar_from_dict
 
 BASE_URL = "https://secondhand.binaracademy.org"
 
-
 def test_register_user():
     userName = set_random_string(8)
     userEmail = set_random_string(8) + "@gmail.com"
@@ -130,10 +129,12 @@ def test_get_profile():
 
 def test_update_fotoprofile():
     # INI SUCCESS TAPI IMG GAK KE KIRIM
-    files = {"user['avatar']['filename']": (os.path.basename('img/garudabiru.jpg'), open('img/klepon1.png', 'rb'), 'application/json; charset=utf-8')}
+    # files = {"image": (os.path.basename('img/garudabiru.jpg'), open('img/klepon1.png', 'rb'), 'application/json; charset=utf-8')}
+
     # INI JUGA SUCCESS TAPI IMG GAK KE KIRIM
     # files = {"user['avatar']": open('img/garudabiru.jpg', 'rb')}
-    response = requests.put(BASE_URL + "/profiles.json", cookies=load_session(), files=files)
+
+    response = requests.put(BASE_URL + "/profiles.json", cookies=load_session())
 
     # Verify status code
     assert response.status_code == 200
@@ -146,9 +147,9 @@ def test_update_fotoprofile():
 
 def test_update_profile():
     jsonBody = set_payload_profile(
-        name="adwadad wwdiriawda",
-        address="JAWDayakarta iyeeYe",
-        phone="aawdad+62924124",
+        name="Wirawijaya",
+        address="Jaktimurt",
+        phone="+ww6666ww66",
         city=1,
     )
     response = requests.put(BASE_URL + "/profiles.json", cookies=load_session(), json=jsonBody)
