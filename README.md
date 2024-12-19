@@ -30,9 +30,9 @@ The project covers the following areas of the Swag Labs website:
 
 ## Features
 
-- Uses Selenium for interacting with web elements and performing automated actions.
-- Organizes test scenarios using TestNG testing framework.
-- Includes a wide range of test cases covering login, checkout product functionality, and more.
+- Uses PyTest for performing automated actions.
+- Python as programming language.
+- Includes a wide range of test cases covering POST Registration, POST Login checkout, PUT Update Profile, and more.
 - Provides easy-to-understand bug reports and test outcomes.
 
 
